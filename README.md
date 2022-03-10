@@ -1,7 +1,7 @@
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-card-component-using-htmlcss-iGgOOKbOl]
+- Live Site URL: [https://ericl81.github.io/FEM-Profile_card_component/]
 
 # Frontend Mentor - Profile card component
 
