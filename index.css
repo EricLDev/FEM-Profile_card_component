@@ -17,6 +17,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 350%;
+    height: 300%;
+    z-index: -1;
+    left: -236%;
+    top: -180%;
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 350%;
+    height: 300%;
+    z-index: -1;
+    right: -295%;
+    bottom: -252%;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -26,6 +52,7 @@ main {
     border-radius: .75rem;
     display: grid;
     grid-template-rows: 38% 38% 24%;
+    position: relative;
 }
 
 .top-card {
@@ -99,7 +126,6 @@ img {
     font-size: .65rem;
     color: hsl(0, 0%, 59%);
     font-weight: 400;
-
 }
 
 .attribution {
@@ -110,4 +136,19 @@ img {
 .attribution a {
     color: hsl(228, 45%, 44%);
     font-size: 11px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 19.5rem;
+    }
+
+    img {
+        left: 123px;
+    }
+
+    .center-card span {
+        margin-left: .25rem;
+    }
+
 }
